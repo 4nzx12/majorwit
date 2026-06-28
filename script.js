@@ -393,11 +393,15 @@ const RegisterWizard = {
     }
     this.reset();
     this.modal?.classList.add('open');
+    document.body.classList.add('modal-open');
+    document.documentElement.classList.add('modal-open');
     this.goToStep(1);
   },
 
   close() {
     this.modal?.classList.remove('open');
+    document.body.classList.remove('modal-open');
+    document.documentElement.classList.remove('modal-open');
   },
 
   reset() {

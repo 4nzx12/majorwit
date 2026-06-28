@@ -435,6 +435,7 @@ const RegisterWizard = {
     const batchField = document.getElementById('wizardPreferredBatch');
     if (batchField) batchField.value = '';
     document.querySelectorAll('#registerModal input[type="checkbox"]')?.forEach(cb => cb.checked = false);
+    document.querySelectorAll('#registerModal .form-checkbox')?.forEach(label => label.classList.remove('active'));
     document.querySelectorAll('#registerModal .modal__option-grid button')?.forEach(btn => btn.classList.remove('active'));
     this.handleClassGradeChange('');
     this.handleBoardChange('');
@@ -531,7 +532,23 @@ const RegisterWizard = {
   handleClassGradeChange(value) {
     this.state.classGrade = value;
     const streamField = document.getElementById('wizardStreamField');
+    const subjectsGroup = document.getElementById('wizardSubjectsGroup');
+    const subjectOther = document.getElementById('wizardSubjectOther');
+    const shouldShowSubjects = value === 'School (5–10)' || value === '11th & 12th';
+
     if (streamField) streamField.style.display = value === '11th & 12th' ? '' : 'none';
+    if (subjectsGroup) subjectsGroup.style.display = shouldShowSubjects ? '' : 'none';
+
+    if (!shouldShowSubjects) {
+      document.querySelectorAll('#registerModal .form-checkbox-grid input[type="checkbox"]')?.forEach(cb => {
+        cb.checked = false;
+      });
+      document.querySelectorAll('#registerModal .form-checkbox')?.forEach(label => {
+        label.classList.remove('active');
+      });
+      if (subjectOther) subjectOther.value = '';
+      this.state.subjects = [];
+    }
   },
 
   handleBoardChange(value) {
@@ -555,7 +572,12 @@ const RegisterWizard = {
 
   bindSubjectCheckboxes() {
     document.querySelectorAll('.form-checkbox-grid input[type="checkbox"]').forEach(input => {
+      const label = input.closest('.form-checkbox');
+      if (label) label.classList.toggle('active', input.checked);
+
       input.addEventListener('change', () => {
+        if (label) label.classList.toggle('active', input.checked);
+
         const value = input.value;
         if (input.checked) {
           if (!this.state.subjects.includes(value)) this.state.subjects.push(value);

@@ -73,6 +73,12 @@ body {
   position: relative;
 }
 
+body.modal-open,
+html.modal-open {
+  overflow: hidden;
+  height: 100%;
+}
+
 body::before {
   content: '';
   position: fixed;
@@ -2145,12 +2151,14 @@ input, select, textarea {
   -webkit-backdrop-filter: blur(6px);
   z-index: 2000;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 20px;
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--transition-base);
+  overflow-y: auto;
+  overscroll-behavior: contain;
 }
 
 .modal-overlay.open {
@@ -2164,10 +2172,15 @@ input, select, textarea {
   padding: clamp(24px, 5vw, 44px);
   width: 100%;
   max-width: 420px;
+  max-height: min(88dvh, 760px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   position: relative;
   transform: translateY(20px) scale(0.97);
   transition: transform var(--transition-base);
   box-shadow: 0 30px 80px rgba(59,42,32,0.3);
+  margin: 20px 0;
 }
 
 .modal-overlay.open .modal {
@@ -2292,6 +2305,7 @@ input, select, textarea {
   .modal {
     max-width: 100%;
     padding: 20px;
+    max-height: min(90dvh, 760px);
   }
 
   .modal__step-footer {

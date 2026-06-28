@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MAJOR WIT — Academy of Excellence. Kerala's premier coaching institute for School, CA, IELTS, PTE, and UG/PG programmes." />
+  <title>MAJOR WIT — Academy of Excellence</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+<div id="gradientCanvasWrapper" aria-hidden="true">
+  <canvas id="gradientCanvas"></canvas>
+</div>
+
+<!-- ============================================
+     NAVIGATION
+     ============================================ -->
+<nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="#home" class="nav__logo" aria-label="MAJOR WIT Home">
+      <img src="assets/logo.png" alt="MAJOR WIT logo" class="nav__logo-img" />
+    </a>
+
+    <ul class="nav__links" role="list">
+      <li><a href="#home" class="nav__link active">Home</a></li>
+      <li><a href="#programs" class="nav__link">Programs</a></li>
+      <li><a href="#forum" class="nav__link">Forum</a></li>
+      <li><a href="#about" class="nav__link">About Us</a></li>
+      <li><a href="#reviews" class="nav__link">Reviews</a></li>
+    </ul>
+
+    <div class="nav__cta" id="navCta">
+      <button class="btn btn--primary" onclick="openRegisterModal()">Register now</button>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ============================================
+     HERO
+     ============================================ -->
+<section class="hero" id="home">
+  <div class="hero__inner">
+
+    <!-- Content -->
+    <div class="hero__content">
+      <div class="hero__eyebrow reveal">
+        <span class="hero__eyebrow-dot"></span>
+        <span class="eyebrow">Academy of Excellence</span>
+      </div>
+
+      <h1 class="hero__title display-lg reveal reveal-delay-1">
+        Outsmart the
+        <span class="hero__title-accent">syllabus.</span>
+      </h1>
+
+      <p class="hero__subtitle reveal reveal-delay-2">
+        From school boards to CA, from IELTS to your PG degree — one Kerala institute, one learning journey, zero compromise.
+      </p>
+
+      <div class="hero__search reveal reveal-delay-3" role="search">
+        <label class="hero__search-label" for="heroSearch">What do you wanna learn?</label>
+        <div class="hero__search-input-wrap">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+          <input type="text" id="heroSearch" placeholder="Try “Spoken English”" autocomplete="off" />
+          <button class="hero__search-button" type="button" id="heroSearchBtn">Search</button>
+        </div>
+        <div class="hero__search-suggestions" id="heroSearchSuggestions" aria-live="polite"></div>
+        <div class="hero__search-tags">
+          <span>Spoken English</span>
+          <span>IELTS</span>
+          <span>CA Foundation</span>
+        </div>
+      </div>
+
+      <div class="hero__actions reveal reveal-delay-4">
+        <button class="btn btn--primary btn--lg" onclick="handleGetDemo()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11.5 19.79 19.79 0 0 1 1.63 2.84 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Free Demo Class
+        </button>
+        <a href="#about" class="btn btn--secondary btn--lg">About Us</a>
+      </div>
+
+      <div class="hero__review-strip reveal reveal-delay-5" aria-label="Student reviews summary">
+        <div class="hero__avatars" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Student" />
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="Student" />
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80" alt="Student" />
+        </div>
+        <div>
+          <div class="hero__review-rating">2,500+ Reviews</div>
+          <p class="hero__review-copy">From happy learners</p>
+        </div>
+      </div>
+
+      <div class="hero__trust reveal reveal-delay-4">
+        <div class="hero__trust-item">
+          <span class="hero__trust-icon">⭐</span>
+          <span>4.8 avg rating</span>
+        </div>
+        <div class="hero__trust-item">
+          <span class="hero__trust-icon">🎓</span>
+          <span>500+ demo classes</span>
+        </div>
+        <div class="hero__trust-item">
+          <span class="hero__trust-icon">📍</span>
+          <span>Kerala-wide</span>
+        </div>
+        <div class="hero__trust-item">
+          <span class="hero__trust-icon">�️</span>
+          <span>5 years of service • 2021–2026</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visual -->
+    <div class="hero__visual reveal reveal-delay-2">
+      <div class="hero__blob" aria-hidden="true"></div>
+      <div class="hero__photo-wrap">
+        <img src="assets/student-photos/student1.png" alt="Student photo" class="hero__photo-img" />
+      </div>
+      <div class="hero__badge" aria-label="4.9 star rating from 300+ happy students">
+        <span class="hero__badge-num">4.9★</span>
+        <div class="hero__badge-label">From 300+<br>Students</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================
+     PROGRAMS
+     ============================================ -->
+<section class="programs section" id="programs">
+  <div class="container">
+
+    <div class="section-header reveal">
+      <p class="eyebrow">What We Offer</p>
+      <h2 class="display-md"><span class="curl-underline">Our Programmes</span></h2>
+      <p>From your first classroom to your professional exams — we've got your entire academic journey covered.</p>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs reveal reveal-delay-1">
+      <div class="tabs__inner" role="tablist">
+        <button class="tab-btn active" data-tab="school" role="tab" aria-selected="true" aria-controls="tab-school">School (5–10)</button>
+        <button class="tab-btn" data-tab="higher" role="tab" aria-selected="false" aria-controls="tab-higher">11th &amp; 12th</button>
+        <button class="tab-btn" data-tab="ca" role="tab" aria-selected="false" aria-controls="tab-ca">CA</button>
+        <button class="tab-btn" data-tab="testprep" role="tab" aria-selected="false" aria-controls="tab-testprep">Test Prep</button>
+        <button class="tab-btn" data-tab="intl" role="tab" aria-selected="false" aria-controls="tab-intl">International</button>
+        <button class="tab-btn" data-tab="ugpg" role="tab" aria-selected="false" aria-controls="tab-ugpg">UG & PG</button>
+      </div>
+    </div>
+
+    <!-- Tab: School -->
+    <div class="tab-panel active" id="tab-school" role="tabpanel">
+      <div class="programs-grid">
+        <div class="program-card reveal">
+          <div class="program-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <h3 class="program-card__title">Mathematics</h3>
+          <p class="program-card__desc">Concept-based teaching with 10+ years of past question papers. Subject-wise and chapter-wise coaching for all boards.</p>
+          <div class="chips-row">
+            <span class="chip-tag">CBSE</span><span class="chip-tag">ICSE</span><span class="chip-tag">Kerala</span><span class="chip-tag">IB</span><span class="chip-tag">IGCSE</span>
+          </div>
+        </div>
+        <div class="program-card reveal reveal-delay-1">
+          <div class="program-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+          </div>
+          <h3 class="program-card__title">Science</h3>
+          <p class="program-card__desc">Physics, Chemistry, and Biology with hands-on conceptual learning and exam-focused practice.</p>
+          <div class="chips-row">
+            <span class="chip-tag">CBSE</span><span class="chip-tag">ICSE</span><span class="chip-tag">Kerala</span><span class="chip-tag">NIOS</span>
+          </div>
+        </div>
+        <div class="program-card reveal reveal-delay-2">
+          <div class="program-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3 class="program-card__title">Social Studies</h3>
+          <p class="program-card__desc">History, Geography, Civics, and Economics — making the world make sense for every student.</p>
+          <div class="chips-row">
+            <span class="chip-tag">CBSE</span><span class="chip-tag">ICSE</span><span class="chip-tag">Kerala</span>
+          </div>
+        </div>
+        <div class="program-card reveal reveal-delay-3">
+          <div class="program-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3 class="program-card__title">English</h3>
+          <p class="program-card__desc">Grammar, reading comprehension, and essay writing — building confidence from the ground up.</p>
+          <div class="chips-row">
+            <span class="chip-tag">CBSE</span><span class="chip-tag">ICSE</span><span class="chip-tag">Kerala</span><span class="chip-tag">AS Level</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Higher Secondary -->
+    <div class="tab-panel" id="tab-higher" role="tabpanel">
+      <div class="programs-grid">
+        <div class="program-card reveal">
+          <div class="program-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3 class="program-card__title">Commerce Stream</h3>
+          <p class="program-card__desc">Deep-dive coaching in Accountancy, Business Studies, Economics, and Entrepreneurship for 11th & 12th.</p>
+          <div class="chips-row">
+            <span class="chip-tag">Accountancy</span><span class="chip-tag">Business Studies</span><span class="chip-tag">Economics</span>
+          </div>
+        </div>
+        <div class="program-card reveal reveal-delay-1">
+          <div class="program-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/><path d="M5.58 16.5h12.85"/></svg>
+          </div>
+          <h3 class="program-card__title">Science Stream</h3>
+          <p class="program-card__desc">Physics, Chemistry, Biology, and Mathematics with rigorous problem-solving and entrance exam focus.</p>
+          <div class="chips-row">
+            <span class="chip-tag">Physics</span><span class="chip-tag">Chemistry</span><span class="chip-tag">Biology</span><span class="chip-tag">Maths</span>
+          </div>
+        </div>
+        <div class="program-card reveal reveal-delay-2">
+          <div class="program-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="14 2 14 8 20 8"/><path d="M20 12V6l-6-4H4a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h7"/><path d="m19 19 3 3-3 3"/><path d="m22 22h-6.7"/></svg>
+          </div>
+          <h3 class="program-card__title">Humanities Stream</h3>
+          <p class="program-card__desc">History, Political Science, Legal Studies, and Economics — for analytical minds and future leaders.</p>
+          <div class="chips-row">
+            <span class="chip-tag">History</span><span class="chip-tag">Political Science</span><span class="chip-tag">Legal Studies</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: CA -->
+    <div class="tab-panel" id="tab-ca" role="tabpanel">
+      <div class="programs-grid">
+        <div class="program-card reveal">
+          <div class="program-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <h3 class="program-card__title">CA Foundation</h3>
+          <p class="program-card__desc">ICAI-standard coaching with mock exams, chapter-wise test series, and flexible 2-month crash courses.</p>
+          <div class="chips-row">
+            <span class="chip-tag">ICAI</span><span class="chip-tag">Mock Exams</span><span class="chip-tag">Test Series</span><span class="chip-tag">Crash Course</span>
+          </div>
+        </div>
+        <div class="program-card reveal reveal-delay-1">
+          <div class="program-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+          </div>
+          <h3 class="program-card__title">CA Intermediate</h3>
+          <p class="program-card__desc">Structured coaching for the most demanding CA level — personalized mentoring and chapter-wise assessments.</p>
+          <div class="chips-row">
+            <span class="chip-tag">ICAI</span><span class="chip-tag">Mentoring</span><span class="chip-tag">6-Month Course</span>
+          </div>
+        </div>
+        <div class="program-card reveal reveal-delay-2">
+          <div class="program-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <h3 class="program-card__title">CA Final</h3>
+          <p class="program-card__desc">Expert-guided coaching for the ultimate CA milestone — advanced mock exams and performance tracking.</p>
+          <div class="chips-row">
+            <span class="chip-tag">ICAI</span><span class="chip-tag">Advanced Mocks</span><span class="chip-tag">Performance Track</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Test Prep -->
+    <div class="tab-panel" id="tab-testprep" role="tabpanel">
+      <div class="programs-grid">
+        <div class="program-card reveal">
+          <div class="program-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+          </div>
+          <h3 class="program-card__title">IELTS</h3>
+          <p class="program-card__desc">Full four-module coverage — Speaking, Listening, Reading, and Writing — with Ernakulam-based expert tutors.</p>
+          <div class="chips-row">
+            <span class="chip-tag">Speaking</span><span class="chip-tag">Listening</span><span class="chip-tag">Reading</span><span class="chip-tag">Writing</span>
+          </div>
+        </div>
+        <div class="program-card reveal reveal-delay-1">
+          <div class="program-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3 class="program-card__title">PTE</h3>
+          <p class="program-card__desc">Pearson Test of English coaching with practice tests, scoring strategy, and computer-based exam simulation.</p>
+          <div class="chips-row">
+            <span class="chip-tag">Speaking</span><span class="chip-tag">Listening</span><span class="chip-tag">Reading</span><span class="chip-tag">Writing</span>
+          </div>
+        </div>
+        <div class="program-card reveal reveal-delay-2">
+          <div class="program-card__icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z"/><path d="M8 12s1.5 3 4 3 4-3 4-3"/><path d="M9 9h.01M15 9h.01"/></svg>
+          </div>
+          <h3 class="program-card__title">Spoken English</h3>
+          <p class="program-card__desc">Build fluency, confidence, and professional communication skills — from beginner to business-level English.</p>
+          <div class="chips-row">
+            <span class="chip-tag">Fluency</span><span class="chip-tag">Pronunciation</span><span class="chip-tag">Business English</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: International -->
+    <div class="tab-panel" id="tab-intl" role="tabpanel">
+      <div class="programs-grid">
+        <div class="program-card reveal"><div class="program-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><h3 class="program-card__title">IGCSE</h3><p class="program-card__desc">Full syllabus coverage with past-paper practice and individual mentoring for Cambridge IGCSE students.</p><div class="chips-row"><span class="chip-tag">Cambridge</span><span class="chip-tag">Past Papers</span><span class="chip-tag">Mentoring</span></div></div>
+        <div class="program-card reveal reveal-delay-1"><div class="program-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><h3 class="program-card__title">IB (International Baccalaureate)</h3><p class="program-card__desc">Expert coaching for IB curriculum across subjects, with focus on extended essays and internal assessments.</p><div class="chips-row"><span class="chip-tag">IB Diploma</span><span class="chip-tag">IA Support</span><span class="chip-tag">Extended Essay</span></div></div>
+        <div class="program-card reveal reveal-delay-2"><div class="program-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div><h3 class="program-card__title">AS & A Level</h3><p class="program-card__desc">Cambridge AS and A Level subject coaching with structured revision and examination technique training.</p><div class="chips-row"><span class="chip-tag">AS Level</span><span class="chip-tag">A Level</span><span class="chip-tag">Cambridge</span></div></div>
+        <div class="program-card reveal reveal-delay-3"><div class="program-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><h3 class="program-card__title">NIOS</h3><p class="program-card__desc">National Institute of Open Schooling coaching for flexible learning students with personalized study plans.</p><div class="chips-row"><span class="chip-tag">NIOS</span><span class="chip-tag">Open School</span><span class="chip-tag">Flexible</span></div></div>
+      </div>
+    </div>
+
+    <!-- Tab: UG & PG -->
+    <div class="tab-panel" id="tab-ugpg" role="tabpanel">
+      <div class="programs-grid">
+        <div class="program-card reveal"><div class="program-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3 class="program-card__title">B.Com</h3><p class="program-card__desc">Bachelor of Commerce coaching — Financial Accounting, Corporate Law, Taxation, and more at university level.</p><div class="chips-row"><span class="chip-tag">Accounting</span><span class="chip-tag">Taxation</span><span class="chip-tag">Finance</span></div></div>
+        <div class="program-card reveal reveal-delay-1"><div class="program-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div><h3 class="program-card__title">BBA</h3><p class="program-card__desc">Bachelor of Business Administration coaching — Management principles, Marketing, HR, and strategic thinking.</p><div class="chips-row"><span class="chip-tag">Management</span><span class="chip-tag">Marketing</span><span class="chip-tag">HR</span></div></div>
+        <div class="program-card reveal reveal-delay-2"><div class="program-card__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></div><h3 class="program-card__title">Other Degree Courses</h3><p class="program-card__desc">Coaching for additional UG and PG programmes. Contact us with your course — we'll build a plan for you.</p><div class="chips-row"><span class="chip-tag">UG</span><span class="chip-tag">PG</span><span class="chip-tag">Custom</span></div></div>
+      </div>
+    </div>
+
+    <div class="programs__cta reveal">
+      <p>Not sure which programme fits? Let's figure it out together.</p>
+      <button class="btn btn--primary" onclick="openRegisterModal()">Register now</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     FORUM / BOOKING FORM
+     ============================================ -->
+<section class="forum" id="forum">
+  <div class="forum__inner">
+
+    <!-- Left: info -->
+    <div class="forum__left">
+      <p class="eyebrow reveal">Book a Demo</p>
+      <h2 class="forum__title reveal reveal-delay-1">Tell us<br>about you.</h2>
+      <div class="curl-divider reveal reveal-delay-1" aria-hidden="true"></div>
+      <p class="forum__subtitle reveal reveal-delay-2">Fill this in once — we'll WhatsApp you back within the hour to confirm your free demo class.</p>
+
+      <div class="forum__features reveal reveal-delay-3">
+        <div class="forum__feature">
+          <div class="forum__feature-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <span>100% Free — no payment needed</span>
+        </div>
+        <div class="forum__feature">
+          <div class="forum__feature-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11.5A19.79 19.79 0 0 1 1.63 2.84 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <span>WhatsApp confirmation within the hour</span>
+        </div>
+        <div class="forum__feature">
+          <div class="forum__feature-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <span>Choose your preferred time slot</span>
+        </div>
+        <div class="forum__feature">
+          <div class="forum__feature-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <span>Small batch, personal attention</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: form card -->
+    <div class="form-card reveal reveal-delay-1">
+      <div class="form-card__header">
+        <p class="form-card__title">Book your Free Demo Class</p>
+        <p class="form-card__sub">Fill once · We WhatsApp back · No spam, ever</p>
+      </div>
+
+      <form id="bookingFormEl" novalidate>
+        <!-- Name -->
+        <div class="form-group">
+          <label class="form-label" for="f_name">Full Name</label>
+          <input class="form-input" type="text" id="f_name" placeholder="Your full name" autocomplete="name" />
+        </div>
+
+        <!-- Phone -->
+        <div class="form-group">
+          <label class="form-label" for="f_phone">Phone Number</label>
+          <div class="form-input-wrap">
+            <input class="form-input" type="tel" id="f_phone" placeholder="10-digit mobile number" autocomplete="tel" style="padding-right:40px" />
+            <span class="form-input-icon">📱</span>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label class="form-label" for="f_email">Email <span style="color:var(--taupe);font-size:10px;font-weight:400">(optional)</span></label>
+          <input class="form-input" type="email" id="f_email" placeholder="your@email.com" autocomplete="email" />
+        </div>
+
+        <!-- Student/Parent -->
+        <div class="form-group">
+          <label class="form-label">I am a</label>
+          <div class="toggle-group">
+            <button type="button" class="toggle-btn active" data-role="student">🎓 Student</button>
+            <button type="button" class="toggle-btn" data-role="parent">👨‍👩‍👧 Parent</button>
+          </div>
+        </div>
+
+        <!-- Class / Programme -->
+        <div class="form-group">
+          <label class="form-label" for="f_class">Class / Programme</label>
+          <div class="form-select-wrap">
+            <select class="form-select" id="f_class">
+              <option value="">Select your programme…</option>
+              <option value="school">5th–10th (School Tuition)</option>
+              <option value="higher">11th &amp; 12th (Higher Secondary)</option>
+              <option value="ca_foundation">CA Foundation</option>
+              <option value="ca_inter">CA Intermediate</option>
+              <option value="ca_final">CA Final</option>
+              <option value="ielts">IELTS</option>
+              <option value="pte">PTE</option>
+              <option value="spoken">Spoken English</option>
+              <option value="ug_pg">UG &amp; PG (B.Com / BBA, etc.)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Conditional: Syllabus (School) -->
+        <div class="form-group form-conditional" id="cond_syllabus">
+          <label class="form-label" for="f_syllabus">Syllabus / Board</label>
+          <div class="form-select-wrap">
+            <select class="form-select" id="f_syllabus">
+              <option value="">Select syllabus…</option>
+              <option>CBSE</option><option>ICSE</option><option>Kerala State Syllabus</option>
+              <option>NIOS</option><option>IB</option><option>IGCSE</option>
+              <option>AS Level</option><option>A Level</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Conditional: Stream (Higher Secondary) -->
+        <div class="form-group form-conditional" id="cond_stream">
+          <label class="form-label" for="f_stream">Stream</label>
+          <div class="form-select-wrap">
+            <select class="form-select" id="f_stream">
+              <option value="">Select stream…</option>
+              <option value="commerce">Commerce</option>
+              <option value="science">Science</option>
+              <option value="humanities">Humanities</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Conditional: Subjects chips -->
+        <div class="form-group form-conditional" id="cond_subjects">
+          <label class="form-label">Subjects</label>
+          <div class="chip-group" id="subjectChips">
+            <!-- populated by JS -->
+          </div>
+        </div>
+
+        <!-- School name -->
+        <div class="form-group">
+          <label class="form-label" for="f_school">School / Institution <span style="color:var(--taupe);font-size:10px;font-weight:400">(optional)</span></label>
+          <input class="form-input" type="text" id="f_school" placeholder="Your school or college name" />
+        </div>
+
+        <!-- Slot -->
+        <div class="form-group">
+          <label class="form-label">Preferred Demo Slot</label>
+          <div class="slot-group">
+            <button type="button" class="slot-btn active" data-slot="4:00–5:00 PM">🕓 4:00–5:00 PM</button>
+            <button type="button" class="slot-btn" data-slot="8:00–9:00 PM">🌙 8:00–9:00 PM</button>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--full mt-16" style="font-size:15px;padding:16px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11.5 19.79 19.79 0 0 1 1.63 2.84 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Send My Free Demo Request
+        </button>
+      </form>
+
+      <!-- Success State -->
+      <div id="formSuccess" class="form-success">
+        <div class="form-success__icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3 class="form-success__title">Almost done!</h3>
+        <p class="form-success__text">Tap <strong>Send</strong> in WhatsApp to confirm your booking. We'll get back to you within the hour. 🎉</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="modal-overlay" id="registerModal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="registerModalTitle">
+    <button class="modal__close" type="button" aria-label="Close registration dialog" onclick="RegisterWizard.close()">×</button>
+    <div class="modal__logo">
+      <img src="assets/logo.png" alt="MAJOR WIT logo" class="nav__logo-img" />
+      <span class="modal__logo-name">MAJOR WIT</span>
+    </div>
+    <h2 id="registerModalTitle" class="modal__title">Admission Form</h2>
+    <p class="modal__subtitle">Complete the application and send your details via WhatsApp.</p>
+
+    <form id="registerForm" onsubmit="RegisterWizard.submit(event)">
+      <div class="modal__step active" data-step="1">
+        <p class="modal__question">Have you attended our free demo class yet?</p>
+        <div class="modal__option-grid">
+          <button class="btn btn--secondary btn--full" type="button" onclick="RegisterWizard.handleAttendance('no')">No</button>
+          <button class="btn btn--primary btn--full" type="button" onclick="RegisterWizard.handleAttendance('yes')">Yes</button>
+        </div>
+      </div>
+
+      <div class="modal__step" data-step="2">
+        <p class="modal__question">Review your demo experience</p>
+        <div class="modal__rating-grid">
+          <button class="btn btn--secondary" type="button" onclick="RegisterWizard.handleRating('Excellent')">Excellent</button>
+          <button class="btn btn--secondary" type="button" onclick="RegisterWizard.handleRating('Good')">Good</button>
+          <button class="btn btn--secondary" type="button" onclick="RegisterWizard.handleRating('Average')">Average</button>
+          <button class="btn btn--secondary" type="button" onclick="RegisterWizard.handleRating('Needs Improvement')">Needs Improvement</button>
+        </div>
+      </div>
+
+      <div class="modal__step" data-step="3">
+        <p class="modal__question">Student Information</p>
+        <div class="form-group">
+          <label class="form-label" for="wizardName">Student Name</label>
+          <input id="wizardName" class="form-input" type="text" placeholder="Your full name" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wizardDob">Date of Birth</label>
+          <input id="wizardDob" class="form-input" type="date" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Gender</label>
+          <div class="modal__option-grid">
+            <button class="btn btn--secondary" type="button" onclick="RegisterWizard.setGender('Male')">Male</button>
+            <button class="btn btn--secondary" type="button" onclick="RegisterWizard.setGender('Female')">Female</button>
+            <button class="btn btn--secondary" type="button" onclick="RegisterWizard.setGender('Other')">Other</button>
+          </div>
+          <input id="wizardGender" type="hidden" />
+        </div>
+        <div class="modal__step-footer">
+          <button class="btn btn--secondary" type="button" onclick="RegisterWizard.goToStep(2)">Back</button>
+          <button class="btn btn--primary" type="button" onclick="RegisterWizard.nextFromStudentInfo()">Next</button>
+        </div>
+      </div>
+
+      <div class="modal__step" data-step="4">
+        <p class="modal__question">Education Details</p>
+        <div class="form-group">
+          <label class="form-label" for="wizardSchoolName">School Name</label>
+          <input id="wizardSchoolName" class="form-input" type="text" placeholder="School name" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wizardClassGrade">Class / Grade</label>
+          <div class="form-select-wrap">
+            <select id="wizardClassGrade" class="form-select" onchange="RegisterWizard.handleClassGradeChange(this.value)">
+              <option value="">Select class or grade</option>
+              <option value="School (5–10)">School (5–10)</option>
+              <option value="11th &amp; 12th">11th &amp; 12th</option>
+              <option value="CA">CA</option>
+              <option value="Test Prep">Test Prep</option>
+              <option value="International">International</option>
+              <option value="UG &amp; PG">UG &amp; PG</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wizardBoard">Board</label>
+          <div class="form-select-wrap">
+            <select id="wizardBoard" class="form-select" onchange="RegisterWizard.handleBoardChange(this.value)">
+              <option value="">Select board</option>
+              <option value="State">State</option>
+              <option value="CBSE">CBSE</option>
+              <option value="ICSE">ICSE</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group" id="wizardBoardOtherField" style="display:none;">
+          <label class="form-label" for="wizardBoardOther">Other board</label>
+          <input id="wizardBoardOther" class="form-input" type="text" placeholder="Specify other board" />
+        </div>
+        <div class="form-group" id="wizardStreamField" style="display:none;">
+          <label class="form-label" for="wizardStream">Stream</label>
+          <div class="form-select-wrap">
+            <select id="wizardStream" class="form-select">
+              <option value="">Select stream</option>
+              <option value="Science">Science</option>
+              <option value="Commerce">Commerce</option>
+              <option value="Humanities">Humanities</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Subjects Required</label>
+          <div class="form-checkbox-grid">
+            <label class="form-checkbox"><input type="checkbox" value="Mathematics" /> Mathematics</label>
+            <label class="form-checkbox"><input type="checkbox" value="Science" /> Science</label>
+            <label class="form-checkbox"><input type="checkbox" value="English" /> English</label>
+            <label class="form-checkbox"><input type="checkbox" value="Social Science" /> Social Science</label>
+            <label class="form-checkbox"><input type="checkbox" value="Physics" /> Physics</label>
+            <label class="form-checkbox"><input type="checkbox" value="Chemistry" /> Chemistry</label>
+            <label class="form-checkbox"><input type="checkbox" value="Biology" /> Biology</label>
+            <label class="form-checkbox"><input type="checkbox" value="Computer Science" /> Computer Science</label>
+            <label class="form-checkbox"><input type="checkbox" value="Other" /> Other</label>
+          </div>
+          <input id="wizardSubjectOther" class="form-input" type="text" placeholder="Other subject (optional)" style="margin-top:10px;" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wizardPrevExam">Previous Exam Percentage/Grade</label>
+          <input id="wizardPrevExam" class="form-input" type="text" placeholder="e.g. 85% or A+" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Preferred Batch</label>
+          <div class="modal__option-grid">
+            <button class="btn btn--secondary" type="button" onclick="RegisterWizard.setPreferredBatch('Morning')">Morning</button>
+            <button class="btn btn--secondary" type="button" onclick="RegisterWizard.setPreferredBatch('Evening')">Evening</button>
+            <button class="btn btn--secondary" type="button" onclick="RegisterWizard.setPreferredBatch('Weekend')">Weekend</button>
+          </div>
+          <input id="wizardPreferredBatch" type="hidden" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wizardPreferredTiming">Preferred Timing</label>
+          <input id="wizardPreferredTiming" class="form-input" type="text" placeholder="e.g. 4-6 PM, 7-8 PM" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wizardAdmissionDate">Date of Admission</label>
+          <input id="wizardAdmissionDate" class="form-input" type="date" />
+        </div>
+        <div class="modal__step-footer">
+          <button class="btn btn--secondary" type="button" onclick="RegisterWizard.goToStep(3)">Back</button>
+          <button class="btn btn--primary" type="button" onclick="RegisterWizard.nextFromEducation()">Next</button>
+        </div>
+      </div>
+
+      <div class="modal__step" data-step="5">
+        <p class="modal__question">Parent / Guardian Information</p>
+        <div class="form-group">
+          <label class="form-label" for="wizardParentName">Parent/Guardian Name</label>
+          <input id="wizardParentName" class="form-input" type="text" placeholder="Parent or guardian name" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wizardRelationship">Relationship</label>
+          <input id="wizardRelationship" class="form-input" type="text" placeholder="Relationship to student" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wizardOccupation">Occupation</label>
+          <input id="wizardOccupation" class="form-input" type="text" placeholder="Occupation" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wizardGuardianPhone">Mobile Number (WhatsApp)</label>
+          <input id="wizardGuardianPhone" class="form-input" type="tel" placeholder="10-digit mobile number" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wizardAltPhone">Alternate Number <span style="color:var(--taupe);font-size:10px;font-weight:400">(optional)</span></label>
+          <input id="wizardAltPhone" class="form-input" type="tel" placeholder="Alternate phone" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wizardGuardianEmail">Email</label>
+          <input id="wizardGuardianEmail" class="form-input" type="email" placeholder="guardian@example.com" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wizardAltEmail">Alternate Email <span style="color:var(--taupe);font-size:10px;font-weight:400">(optional)</span></label>
+          <input id="wizardAltEmail" class="form-input" type="email" placeholder="alternate email" />
+        </div>
+        <div class="modal__step-footer">
+          <button class="btn btn--secondary" type="button" onclick="RegisterWizard.goToStep(4)">Back</button>
+          <button class="btn btn--primary" type="button" onclick="RegisterWizard.nextFromFamily()">Next</button>
+        </div>
+      </div>
+
+      <div class="modal__step" data-step="6">
+        <p class="modal__question">Address & Emergency Contact</p>
+        <div class="form-group">
+          <label class="form-label" for="wizardAddress">House No./Street</label>
+          <input id="wizardAddress" class="form-input" type="text" placeholder="House number and street" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wizardCity">City</label>
+          <input id="wizardCity" class="form-input" type="text" placeholder="City" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wizardDistrict">District</label>
+          <input id="wizardDistrict" class="form-input" type="text" placeholder="District" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wizardState">State</label>
+          <input id="wizardState" class="form-input" type="text" placeholder="State" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wizardPin">PIN Code</label>
+          <input id="wizardPin" class="form-input" type="text" placeholder="PIN code" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wizardEmergencyName">Emergency Contact Name</label>
+          <input id="wizardEmergencyName" class="form-input" type="text" placeholder="Emergency contact name" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wizardEmergencyRelation">Relationship</label>
+          <input id="wizardEmergencyRelation" class="form-input" type="text" placeholder="Relationship" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="wizardEmergencyPhone">Mobile Number</label>
+          <input id="wizardEmergencyPhone" class="form-input" type="tel" placeholder="Emergency contact phone" />
+        </div>
+        <div class="modal__step-footer">
+          <button class="btn btn--secondary" type="button" onclick="RegisterWizard.goToStep(5)">Back</button>
+          <button class="btn btn--primary" type="button" onclick="RegisterWizard.nextFromLocation()">Next</button>
+        </div>
+      </div>
+
+      <div class="modal__step" data-step="7">
+        <p class="modal__question">Declaration</p>
+        <p class="body-base" style="margin-bottom:16px; color: var(--taupe);">
+          I hereby declare that the information provided above is true and correct to the best of my knowledge. I agree to follow the rules and regulations of the tuition center.
+        </p>
+        <div class="form-group">
+          <label class="form-label" for="wizardDeclarationDate">Date</label>
+          <input id="wizardDeclarationDate" class="form-input" type="date" readonly />
+        </div>
+        <div class="modal__step-footer">
+          <button class="btn btn--secondary" type="button" onclick="RegisterWizard.goToStep(6)">Back</button>
+          <button class="btn btn--primary" type="submit">Register now</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<!-- ============================================
+     QUOTE BREAK
+     ============================================
+<section class="quote-break section">
+  <div class="quote-break__inner">
+    <div class="quote-break__photo reveal">
+      <div class="photo-placeholder">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="5"/><path d="M3 21v-1a9 9 0 0 1 18 0v1"/></svg>
+        <p>Student photo<br>goes here</p>
+      </div>
+    </div>
+    <div class="quote-break__content reveal reveal-delay-1">
+      <span class="quote-mark" aria-hidden="true">"</span>
+      <blockquote class="quote-break__quote">
+        I didn't think CA Inter could feel manageable. MAJOR WIT made the syllabus make sense.
+      </blockquote>
+      <p class="quote-break__attr">CA Intermediate Student</p>
+      <button class="btn btn--primary" onclick="openRegisterModal()">
+        Register now →
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     ABOUT US
+     ============================================ -->
+<section class="about section" id="about">
+
+  <div class="about__statement reveal">
+    <p class="eyebrow" style="text-align:center;margin-bottom:12px">Our Story</p>
+    <p class="about__statement-quote">
+      "We don't just teach — we inspire, guide, and empower students to achieve academic excellence and lifelong success."
+    </p>
+    <div class="curl-divider" style="margin:16px auto 0;" aria-hidden="true"></div>
+  </div>
+
+  <div class="about__grid container">
+    <div class="about__mission reveal">
+      <h3>Our Mission</h3>
+      <p>MAJOR WIT bridges students and institutions with personalized support, bringing school education, professional courses, higher education, and language training together under one roof — rare for a Kerala coaching institute that typically specialises in just one or two.</p>
+      <p>We believe every student deserves individual attention, small batch sizes, and teaching that is both concept-based and exam-focused — without compromise.</p>
+    </div>
+    <div class="about__checklist reveal reveal-delay-1">
+      <h3>Why Students Choose MAJOR WIT</h3>
+      <ul class="checklist" role="list">
+        <li class="checklist-item"><div class="checklist-icon" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span>Individual attention for every student</span></li>
+        <li class="checklist-item"><div class="checklist-icon" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span>Small batch sizes for effective learning</span></li>
+        <li class="checklist-item"><div class="checklist-icon" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span>Experienced and dedicated faculty</span></li>
+        <li class="checklist-item"><div class="checklist-icon" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span>Concept-based, exam-oriented teaching</span></li>
+        <li class="checklist-item"><div class="checklist-icon" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span>Personalized study plans and mentoring</span></li>
+        <li class="checklist-item"><div class="checklist-icon" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span>High-quality study materials and worksheets</span></li>
+        <li class="checklist-item"><div class="checklist-icon" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span>Regular assessments and performance tracking</span></li>
+        <li class="checklist-item"><div class="checklist-icon" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span>One destination for School, CA, IELTS/PTE, UG &amp; PG</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Journey Timeline -->
+  <div class="about__journey container">
+    <h3 class="journey-title reveal">One Learning Journey. Unlimited Opportunities.</h3>
+    <div class="journey-track reveal reveal-delay-1" role="list">
+      <div class="journey-node" role="listitem">
+        <div class="journey-node__dot" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <span class="journey-node__label">School (5–10)</span>
+      </div>
+      <div class="journey-node" role="listitem">
+        <div class="journey-node__dot" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/></svg>
+        </div>
+        <span class="journey-node__label">Higher Secondary</span>
+      </div>
+      <div class="journey-node" role="listitem">
+        <div class="journey-node__dot" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <span class="journey-node__label">CA / Professional</span>
+      </div>
+      <div class="journey-node" role="listitem">
+        <div class="journey-node__dot" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/></svg>
+        </div>
+        <span class="journey-node__label">IELTS / PTE</span>
+      </div>
+      <div class="journey-node" role="listitem">
+        <div class="journey-node__dot" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+        </div>
+        <span class="journey-node__label">UG &amp; PG</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="about__stats">
+    <div class="stats-row">
+      <div class="stat-item reveal">
+        <div class="stat-num" data-count="500" data-suffix="+">500+</div>
+        <div class="stat-label">Demo Classes Run</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-1">
+        <div class="stat-num" data-count="9" data-suffix="">9+</div>
+        <div class="stat-label">Curricula Covered</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-2">
+        <div class="stat-num">4.8★</div>
+        <div class="stat-label">Average Rating</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-3">
+        <div class="stat-num">Kerala</div>
+        <div class="stat-label">Wide Coverage</div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ============================================
+     REVIEWS
+     ============================================ -->
+<section class="reviews section" id="reviews">
+  <div class="container">
+
+    <div class="section-header reveal">
+      <p class="eyebrow">Student Stories</p>
+      <h2 class="display-md"><span class="curl-underline">What Our Students Say</span></h2>
+    </div>
+
+    <div class="reviews__filters reveal reveal-delay-1" role="group" aria-label="Filter reviews by category">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="school">School</button>
+      <button class="filter-btn" data-filter="ca">CA</button>
+      <button class="filter-btn" data-filter="ielts">IELTS / PTE</button>
+      <button class="filter-btn" data-filter="ugpg">UG &amp; PG</button>
+    </div>
+
+    <div class="reviews-grid">
+
+      <div class="review-card reveal" data-cat="ca">
+        <div class="review-card__stars" aria-label="5 stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="review-card__quote">"I didn't think CA Intermediate could feel manageable. MAJOR WIT made the most complex chapters make complete sense. The small batches meant the teacher always knew where I was struggling."</p>
+        <div class="review-card__divider"></div>
+        <div class="review-card__meta">
+          <div class="review-card__avatar" aria-hidden="true">A</div>
+          <div>
+            <p class="review-card__name">Arjun M.</p>
+            <span class="review-card__tag">CA Intermediate</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal reveal-delay-1" data-cat="ielts">
+        <div class="review-card__stars" aria-label="5 stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="review-card__quote">"Got a Band 8 in IELTS on my first attempt. The speaking sessions here were genuinely transformative — I went from dreading the interview to actually enjoying it. Cannot recommend enough."</p>
+        <div class="review-card__divider"></div>
+        <div class="review-card__meta">
+          <div class="review-card__avatar" aria-hidden="true">P</div>
+          <div>
+            <p class="review-card__name">Priya K.</p>
+            <span class="review-card__tag">IELTS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal reveal-delay-2" data-cat="school">
+        <div class="review-card__stars" aria-label="5 stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="review-card__quote">"My daughter went from struggling in 8th grade Maths to scoring 95 in boards. The teachers genuinely care — they noticed her weak areas in the very first class and had a plan by the second."</p>
+        <div class="review-card__divider"></div>
+        <div class="review-card__meta">
+          <div class="review-card__avatar" aria-hidden="true">R</div>
+          <div>
+            <p class="review-card__name">Rekha T.</p>
+            <span class="review-card__tag">School (Parent)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal" data-cat="ugpg">
+        <div class="review-card__stars" aria-label="5 stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="review-card__quote">"B.Com was brutal until I found MAJOR WIT. The way they break down Accountancy concepts — topic by topic, with practice questions at each step — is miles ahead of what my college does."</p>
+        <div class="review-card__divider"></div>
+        <div class="review-card__meta">
+          <div class="review-card__avatar" aria-hidden="true">S</div>
+          <div>
+            <p class="review-card__name">Siddharth N.</p>
+            <span class="review-card__tag">B.Com</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal reveal-delay-1" data-cat="school">
+        <div class="review-card__stars" aria-label="5 stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="review-card__quote">"The 10 years of past question papers they use for practice is incredible. By the time my exams came, I felt like I'd already written them. Scored A+ across Science and Maths."</p>
+        <div class="review-card__divider"></div>
+        <div class="review-card__meta">
+          <div class="review-card__avatar" aria-hidden="true">F</div>
+          <div>
+            <p class="review-card__name">Faisal A.</p>
+            <span class="review-card__tag">School (10th)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card reveal reveal-delay-2" data-cat="ielts">
+        <div class="review-card__stars" aria-label="5 stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="review-card__quote">"I needed PTE for my Canadian visa. The mock tests here were almost identical to the actual exam. I passed with an 80+ in all modules. The coaching is genuinely world-class."</p>
+        <div class="review-card__divider"></div>
+        <div class="review-card__meta">
+          <div class="review-card__avatar" aria-hidden="true">N</div>
+          <div>
+            <p class="review-card__name">Nandini V.</p>
+            <span class="review-card__tag">PTE</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer class="footer" id="footer">
+  <div class="footer__inner container">
+
+    <!-- Brand -->
+    <div class="footer__brand">
+      <div class="footer__logo-wrap">
+        <img src="assets/logo.png" alt="MAJOR WIT logo" class="footer__logo-img" />
+        <div>
+          <div class="footer__logo-name">MAJOR WIT</div>
+          <div class="footer__logo-sub">Academy of Excellence</div>
+        </div>
+      </div>
+      <p class="footer__tagline">One Kerala institute, one learning journey. From your first classroom to your final degree — we're with you.</p>
+      <div class="footer__socials" role="list" aria-label="Social media links">
+        <a href="#" class="social-btn" aria-label="Instagram" role="listitem">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="#" class="social-btn" aria-label="Facebook" role="listitem">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#" class="social-btn" aria-label="YouTube" role="listitem">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.6C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+        </a>
+      </div>
+      <div class="footer__contact">
+        <div class="footer__contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Ernakulam, Kerala
+        </div>
+        <div class="footer__contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11.5 19.79 19.79 0 0 1 1.63 2.84 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +91 70250 03600
+        </div>
+        <div class="footer__contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          hello@majorwit.com
+        </div>
+      </div>
+      <div class="footer__whatsapp mt-24">
+        <a href="https://wa.me/917025003600" class="btn btn--primary" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+          💬 Chat with us on WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <p class="footer__col-title">Quick Links</p>
+      <ul class="footer__links" role="list">
+        <li><a href="#home" class="footer__link">Home</a></li>
+        <li><a href="#programs" class="footer__link">Programs</a></li>
+        <li><a href="#forum" class="footer__link">Book a Demo</a></li>
+        <li><a href="#about" class="footer__link">About Us</a></li>
+        <li><a href="#reviews" class="footer__link">Reviews</a></li>
+        <li><a href="login.html" class="footer__link">Login / Register</a></li>
+      </ul>
+    </div>
+
+    <!-- Programmes -->
+    <div>
+      <p class="footer__col-title">Programmes</p>
+      <ul class="footer__links" role="list">
+        <li><a href="#programs" class="footer__link">School Tuition (5–10)</a></li>
+        <li><a href="#programs" class="footer__link">Higher Secondary</a></li>
+        <li><a href="#programs" class="footer__link">CA Foundation</a></li>
+        <li><a href="#programs" class="footer__link">CA Intermediate</a></li>
+        <li><a href="#programs" class="footer__link">CA Final</a></li>
+        <li><a href="#programs" class="footer__link">IELTS / PTE</a></li>
+        <li><a href="#programs" class="footer__link">UG &amp; PG</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer__bottom container">
+    <p class="footer__copyright">© 2026 MAJOR WIT Academy of Excellence. All rights reserved.</p>
+    <div class="footer__legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ============================================
+     TOAST
+     ============================================ -->
+<div class="toast" id="toast" role="alert" aria-live="polite">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B9793F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+  <span class="toast__msg"></span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

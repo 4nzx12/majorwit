@@ -2264,6 +2264,49 @@ input, select, textarea {
   width: 100%;
 }
 
+.form-checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.form-checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 10px 12px;
+  border: 1px solid rgba(107, 66, 38, 0.18);
+  border-radius: 999px;
+  background: var(--latte);
+  color: var(--espresso);
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.form-checkbox:hover {
+  transform: translateY(-1px);
+  border-color: var(--caramel);
+  background: #f6e8d8;
+}
+
+.form-checkbox input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.form-checkbox.active {
+  border-color: var(--caramel);
+  background: rgba(185, 121, 63, 0.16);
+  box-shadow: 0 8px 18px rgba(107, 66, 38, 0.12);
+}
+
 .modal__step-footer {
   display: flex;
   justify-content: space-between;
@@ -2308,6 +2351,25 @@ input, select, textarea {
     max-height: min(90dvh, 760px);
   }
 
+  .form-checkbox-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .form-checkbox {
+    min-height: 46px;
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 740px) {
   .modal__step-footer {
     flex-direction: column;
   }
